@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+header div {
+    font-size: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -41,7 +51,7 @@ header .active {
 }
 
 .hero button {
-    background: #00104e;
+    background: #001154;
     color: white;
     border: none;
     padding: 15px 30px;
