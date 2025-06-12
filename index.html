@@ -82,12 +82,23 @@
         </div>
     </section>
 
- <section class="contact-form">
+<section class="contact-form">
     <h2>Participe da SETEC 2025</h2>
     <p>Deixe suas informações e faça parte dessa revolução tecnológica no Barbosa Ferraz!</p>
     <form action="#" method="post">
-        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="text" name="nome" placeholder="Nome completo" required>
         <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="tel" name="telefone" placeholder="Seu telefone (WhatsApp)" required>
+        <input type="text" name="turma" placeholder="Sua série/turma" required>
+
+        <select name="interesse" required>
+            <option value="" disabled selected>Selecione seu interesse</option>
+            <option value="projetos">Projetos</option>
+            <option value="oficinas">Oficinas</option>
+            <option value="palestras">Palestras</option>
+            <option value="noticias">Notícias</option>
+        </select>
+
         <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
         <button type="submit">Enviar</button>
     </form>
