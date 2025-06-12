@@ -162,3 +162,36 @@ footer a {
     border: none;
     cursor: pointer;
 }
+.neon-title {
+    font-size: 40px;
+    color: #0ff; /* Cor base neon: ciano */
+    text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 80px #0ff;
+    animation: neon-flicker 1.5s infinite alternate;
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista (pode importar do Google Fonts) */
+    text-align: center; /* Centraliza o título */
+    margin: 20px 0;
+}
+
+@keyframes neon-flicker {
+    0% {
+        text-shadow:
+            0 0 5px #0ff,
+            0 0 10px #0ff,
+            0 0 20px #0ff,
+            0 0 40px #0ff,
+            0 0 80px #0ff;
+    }
+    100% {
+        text-shadow:
+            0 0 2px #0ff,
+            0 0 4px #0ff,
+            0 0 8px #0ff,
+            0 0 16px #0ff,
+            0 0 32px #0ff;
+    }
+}
